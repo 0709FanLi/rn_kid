@@ -1,3 +1,7 @@
 /node_modules
 /ios/Pods/
 yarn-error.log
+/android
+package-lock.json
+yarn.lock
+Podfile.lock
