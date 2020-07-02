@@ -5,3 +5,7 @@ yarn-error.log
 package-lock.json
 yarn.lock
 Podfile.lock
+yarn.lock
+.DS_Store
+yarn.lock
+ios/Podfile.lock
