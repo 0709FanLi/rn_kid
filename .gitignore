@@ -3,7 +3,7 @@
 yarn-error.log
 /android
 package-lock.json
-yarn.lock
+/yarn.lock
 Podfile.lock
 .DS_Store
 ios/Podfile.lock
