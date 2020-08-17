@@ -6,6 +6,7 @@ import { enableScreens } from 'react-native-screens';
 import { createNativeStackNavigator } from 'react-native-screens/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { connect } from 'react-redux'
 
 const Tab = createBottomTabNavigator();
 
@@ -65,9 +66,7 @@ function Settings() {
 }
 
 
-// const Stack = createStackNavigator();
-
-function Router() {
+function Routerss() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -77,6 +76,18 @@ function Router() {
       </Stack.Navigator>
     </NavigationContainer>
   );
+}
+
+class Router extends React.PureComponent{
+    render(){
+        return <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen name="Home" component={ Home } />
+                <Stack.Screen name="MyDrawer" component={ MyDrawer } />
+                <Stack.Screen name="MyTabs" component={ MyTabs } />
+            </Stack.Navigator>
+        </NavigationContainer>
+    }
 }
 
 export default Router;
