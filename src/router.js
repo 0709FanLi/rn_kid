@@ -6,7 +6,7 @@ import { enableScreens } from 'react-native-screens';
 import { createNativeStackNavigator } from 'react-native-screens/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { connect } from 'react-redux'
+import dva, { connect } from 'dva';
 
 const Tab = createBottomTabNavigator();
 
@@ -77,6 +77,9 @@ function Routerss() {
     </NavigationContainer>
   );
 }
+
+// const app = dva();
+
 
 class Router extends React.PureComponent{
     render(){
